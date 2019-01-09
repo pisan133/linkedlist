@@ -51,9 +51,8 @@ void add(Node *curr, int value) {
 
 // free all nodes
 void freeAll(Node *curr) {
-  Node* todelete;
   while (curr->nextPtr != NULL) {
-    todelete = curr;
+    Node* todelete = curr;
     curr = curr->nextPtr;
     printf("Deleting %d\n", todelete->data);
     free(todelete);
