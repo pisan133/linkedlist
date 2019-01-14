@@ -51,14 +51,12 @@ void add(Node *curr, int value) {
 
 // free all nodes
 void freeAll(Node *curr) {
-  while (curr->nextPtr != NULL) {
+  while (curr != NULL) {
     Node* todelete = curr;
     curr = curr->nextPtr;
     printf("Deleting %d\n", todelete->data);
     free(todelete);
   }
-  printf("Deleting %d\n", curr->data);
-  free(curr);
 }
 
 // get new values from user and add them to the list
