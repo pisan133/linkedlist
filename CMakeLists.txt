@@ -6,4 +6,4 @@ set(CMAKE_C_STANDARD 11)
 # have compiler give warnings, but not for signed/unsigned
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -Wall -Wextra -Wno-sign-compare")
 
-add_executable(linkedlist main.c)
+add_executable(linkedlist main.c linkedlist.c)
