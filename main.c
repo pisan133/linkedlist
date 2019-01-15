@@ -9,9 +9,11 @@
 
 // forward declaration, implemented in linkedlist.c
 void testInteractive();
+void testAddBeforeAfterSorted();
 
 int main() {
   testInteractive();
+  // testAddBeforeAfterSorted();
   printf("Done!\n");
   return 0;
 }
